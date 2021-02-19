@@ -1,4 +1,6 @@
 <?php
+// @TODO: Adds to category 'TYPO3 // jweiland Musterprojekt TYPO3 version 10 // https://vimeo.com/jweiland'
+
 $sites = [
     'sections' => [
         [
