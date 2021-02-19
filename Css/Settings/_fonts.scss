@@ -9,7 +9,7 @@ $fonts:
 @each $name, $id, $style, $weight in $fonts {
   @font-face {
     font-family: #{$name};
-    src: url('../fonts/#{$id}.ttf') format('truetype');
+    src: url('../Fonts/#{$id}.ttf') format('truetype');
     font-style: #{$style};
     font-weight: #{$weight};
   }

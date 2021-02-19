@@ -1,15 +1,8 @@
 class App {
     constructor() {
-        this.initializeLoading();
         this.initializeSidebar();
         this.initializeAccordion();
-
-
         this.initializeIframeLoading();
-    }
-
-    initializeLoading() {
-        console.info('JavaScript loaded.');
     }
 
     initializeSidebar() {

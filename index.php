@@ -77,7 +77,7 @@
                                             }
                                         }
                                     } else {
-                                        showAlert('warning', 'Leider konnten wir in dieser Kategorie keine Tools für dich finden.');
+                                        showAlert('error', 'Leider konnten wir in dieser Kategorie keine Daten für dich finden.');
                                     }
                                 ?>
                             </ul>
@@ -90,7 +90,7 @@
                     }
                 ?>
 
-                <a class="alert" href="https://www.dirk-buddenbrock.de" target="_blank">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
+                <a class="alert footer" href="https://www.dirk-buddenbrock.de" target="_blank">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
             </nav>
         </div>
         <main>
