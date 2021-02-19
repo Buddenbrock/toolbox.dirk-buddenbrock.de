@@ -1,3 +1,19 @@
+:root {
+  --color-primary: #1d71b8;
+  --color-primary-light: #5b99ce;
+  --color-secondary: #93c01f;
+  --color-white: #fff;
+  --color-grey: #f6f6f6;
+  --color-grey-dark: #dfdfdf;
+  --color-grey-darker: #131313;
+  --color-error: #842029;
+  --color-error-light: #f8d7da;
+  --color-warning: #664d03;
+  --color-warning-light: #fff3cd;
+  --color-success: #0f5132;
+  --color-success-light: #d1e7dd;
+}
+
 *,
 *::before,
 *::after {
@@ -25,22 +41,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-:root {
-  --color-primary: #1d71b8;
-  --color-primary-light: #5b99ce;
-  --color-secondary: #93c01f;
-  --color-white: #fff;
-  --color-grey: #f6f6f6;
-  --color-grey-dark: #dfdfdf;
-  --color-grey-darker: #131313;
-  --color-error: #842029;
-  --color-error-light: #f8d7da;
-  --color-warning: #664d03;
-  --color-warning-light: #fff3cd;
-  --color-success: #0f5132;
-  --color-success-light: #d1e7dd;
 }
 
 @font-face {
@@ -76,6 +76,10 @@ body {
   height: 100vh;
   overflow: hidden;
   width: 100vw;
+}
+
+.footer {
+  margin-top: 1rem;
 }
 
 header {
