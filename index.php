@@ -1,75 +1,102 @@
 <?php
-    include_once ('sites.php');
-
-    $title = 'alpha 1.0.0';
-
+    include_once('Settings/config.php');
+    include_once('Settings/sites.php');
+    include_once('Settings/functions.php');
 ?>
-
-<!DOCTYPE html>
-<html lang="de">
+<html lang="de-DE">
 <head>
-    <meta charset="UTF-8">
-    <title>Toolbox</title>
-    <meta name="author" content="Dirk Buddenbrock">
-    <meta name="description" content="Toolbox">
-    <meta name="robots" content="noindex,nofollow">
-    <link rel="canonical" href="https://toolbox.dirk-buddenbrock.de/">
+    <meta charset="utf-8">
+    <!--
+        This site was created with ❤️ by Dirk Buddenbrock - https://www.dirk-buddenbrock.de/
+    -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="date" content="2020-09-05">
-    <meta name="version" content="v1.0.0">
+    <base href="<?=($base)?>">
+    <link rel="shortcut icon" type="image/svg+xml" href="Icons/favicon.svg" />
 
-    <!-- Icon Tags -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.svg">
+    <title><?=($title)?></title>
+    <meta name="description" content="<?=($description)?>">
+    <meta name="author" content="<?=($author)?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Stylesheet Tags -->
-    <link rel="stylesheet" href="css/main.css">
+    <meta property="og:title" content="<?=($title)?>" />
+    <meta property="og:description" content="<?=($description)?>️" />
+    <meta property="og:image" content="<?=($image)?>" />
+    <meta property="og:image:url" content="<?=($image)?>" />
+    <meta property="og:image:width" content="<?=($imageWidth)?>" />
+    <meta property="og:image:height" content="<?=($imageHeight)?>" />
+    <meta property="og:image:alt" content="<?=($imageAlt)?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="<?=($websiteTitle)?>" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="<?=($title)?>" />
+    <meta name="twitter:description" content="<?=($description)?>️" />
+    <meta name="twitter:image" content="<?=($image)?>" />
+    <meta name="twitter:image:alt" content="<?=($imageAlt)?>" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="compatible" content="IE=edge" />
+    <meta name="robots" content="index,nofollow">
+    <meta name="version" content="<?=($version)?>">
+
+    <link rel="canonical" href="<?=($canonical)?>">
+
+    <link rel="stylesheet" href="Css/main.css">
 </head>
 <body>
-    <div class="page">
-        <div class="page__header">
+    <div class="wrapper">
+        <div class="sidebar active">
+            <button class="sidebar__button" title="Sidebar schließen"></button>
             <header>
-                <img src="./images/logo.svg" alt="Toolbox" class="logo" />
-                <h1><?=($title)?></h1>
+                <img src="Images/logo.svg" alt="Toolbox" class="logo" />
             </header>
             <nav>
 
                 <?php
                     if($sites) {
                         foreach ($sites['sections'] as $section) {
-                            echo '<header>';
-                                echo '<h2>' . $section[0] . '</h2>';
-                            echo '</header>';
-                            echo '<footer>';
-                                echo '<ul>';
-                                    foreach ($section[1] as $item) {
-                                        echo '<li>';
-                                        if($item[2]) {
-                                            echo '<a href="' . $item[0] . '" title="' . $item[1] . '" target="_blank">' . $item[1] . '<span class="icon icon-' . $item[2] . '"></span></a>';
-                                        } else {
-                                            echo '<button class="iframe-link" data-link="' . $item[0] . '">' . $item[1] . '</button>';
-                                            echo '<a class="show-mobile" href="' . $item[0] . '" title="' . $item[1] . '" target="_blank">' . $item[1] . '</a>';
+                ?>
+                    <div class="accordion">
+                        <button class="button">
+                            <h2><?=($section[0])?></h2>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <?php
+                                    if($section[1]) {
+                                        foreach ($section[1] as $item) {
+                                            if($item[0]) {
+                                                echo '<li>';
+                                                if($item[2]) {
+                                                    echo '<a href="' . $item[0] . '" title="' . $item[1] . '" target="_blank">' . $item[1] . '<span class="icon icon-' . $item[2] . '"></span></a>';
+                                                } else {
+                                                    echo '<button class="iframe-link" data-link="' . $item[0] . '">' . $item[1] . '</button>';
+                                                    echo '<a class="show-mobile" href="' . $item[0] . '" title="' . $item[1] . '" target="_blank">' . $item[1] . '</a>';
+                                                }
+                                                echo '</li>';
+                                            }
                                         }
-                                        echo '</li>';
+                                    } else {
+                                        showAlert('warning', 'Leider konnten wir in dieser Kategorie keine Tools für dich finden.');
                                     }
-                                echo '</ul>';
-                            echo '</footer>';
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                <?php
                         }
                     } else {
-                        echo '<p class="error">Leider konnten wir keinen Tools für dich finden.</p>';
+                        showAlert('error', 'Leider konnten wir keinen Tools für dich finden.');
                     }
                 ?>
-                
+
+                <a class="alert" href="https://www.dirk-buddenbrock.de" target="_blank">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
             </nav>
-            <footer>
-                &copy; <?=(date('Y'))?> Buddenbrock Media Pro
-            </footer>
         </div>
-        <main class="page__main">
-            <iframe id="iframe" src="./default.html" frameborder="0"></iframe>
+        <main>
+            <iframe id="iframe" src="default.html" frameborder="0"></iframe>
         </main>
     </div>
-
-    <script src="./scripts/main.js"></script>
+    <script src="JavaScript/app.js"></script>
 </body>
 </html>

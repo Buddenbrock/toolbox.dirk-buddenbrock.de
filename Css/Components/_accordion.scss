@@ -1,0 +1,96 @@
+.accordion {
+  background-color: $color-white;
+  box-shadow: 0 0 4px 0 $color-grey-dark;
+  margin-bottom: .5rem;
+
+  .button {
+    background-color: $color-white;
+    color: $color-grey-darker;
+    cursor: pointer;
+    display: block;
+    padding: .75rem 3.5rem .75rem 1rem;
+    text-align: left;
+    transition: background-color .3s ease-in-out;
+    width: 100%;
+    will-change: background-color;
+
+    &::after {
+      background-image: url('../Images/icon-add.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 1.5rem;
+      position: absolute;
+      right: 1rem;
+      text-align: center;
+      top: .75rem;
+      transition: backgroud-image .3s ease-in-out;
+      width: 1.5rem;
+      will-change: background-image;
+    }
+
+    &:hover {
+      background-color: $color-grey-dark;
+      font-weight: bold;
+    }
+
+    &.active {
+      background-color: $color-grey-dark;
+      font-weight: bold;
+
+      &::after {
+        background-image: url('../Images/icon-close.svg');
+      }
+
+      + .panel {
+        height: auto;
+      }
+    }
+  }
+
+  .panel {
+    height: 0;
+    overflow: hidden;
+
+    ul {
+      list-style: none;
+      text-align: left;
+    }
+
+    li {
+      border-bottom: 1px solid $color-grey-dark;
+
+      a,
+      button {
+        background-color: transparent;
+        color: $color-grey-darker;
+        cursor: pointer;
+        display: block;
+        padding: .75rem 1rem;
+        text-align: left;
+        width: 100%;
+
+        &:hover {
+          background-color: $color-grey;
+        }
+      }
+    }
+  }
+}
+
+.iframe-link {
+  display: none !important;
+
+  @media #{$mq-medium} {
+    display: block !important;
+  }
+}
+
+.show-mobile {
+  display: block !important;
+
+  @media #{$mq-medium} {
+    display: none !important;
+  }
+}

@@ -1,0 +1,22 @@
+.alert {
+  background-color: $color-white;
+  box-shadow: 0 0 4px 0 $color-grey-dark;
+  color: $color-grey-darker;
+  display: block;
+  padding: .75rem 1rem;
+
+  &.error {
+    background-color: $color-error-light;
+    color: $color-error;
+  }
+
+  &.warning {
+    background-color: $color-warning-light;
+    color: $color-warning;
+  }
+
+  &.success {
+    background-color: $color-success-light;
+    color: $color-success;
+  }
+}

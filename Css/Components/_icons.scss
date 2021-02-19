@@ -1,0 +1,27 @@
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: none;
+
+  @media #{$mq-medium} {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    top: .2rem;
+    width: 1rem;
+  }
+}
+
+.icon {
+  &-external::before {
+    background-image: url('../Images/icon-link.svg');
+  }
+
+  &-download::before {
+    background-image: url('../Images/icon-download.svg');
+  }
+}
