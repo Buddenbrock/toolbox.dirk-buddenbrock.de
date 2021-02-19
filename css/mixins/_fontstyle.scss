@@ -1,0 +1,19 @@
+@mixin bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+@mixin bold {
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+@mixin normal {
+  font-weight: normal;
+  font-style: normal;
+}

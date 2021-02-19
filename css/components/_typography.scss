@@ -1,0 +1,120 @@
+body {
+  font-family: $font-family;
+  background: $color-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include normal;
+  display: block;
+}
+
+h1 {
+  @include font-size-m;
+  @include bold;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+h2 {
+  @include font-size-m;
+  @include bold;
+  text-align: left;
+}
+
+h3 {
+  @include font-size-m;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  @include font-size-s;
+  margin-bottom: .5rem;
+}
+
+p {
+  @include font-size-s;
+  @include normal;
+  margin-bottom: 1rem;
+
+  &.error {
+    background-color: $color-danger;
+    color: $color-white;
+    padding: 1rem;
+  }
+}
+
+li {
+  @include font-size-s;
+  @include normal;
+  text-align: left;
+  display: block;
+
+  &:not(:last-child) a,
+  &:not(:last-child) button {
+    border-bottom: 1px solid rgba($color-primary, .5);
+  }
+
+  a,
+  button {
+    display: block;
+    padding: .8rem 1rem;
+    transition: font-weight .3s ease;
+    will-change: font-weight;
+
+    &:hover,
+    &:focus {
+      @include bold;
+    }
+  }
+}
+
+b,
+strong {
+  @include bold;
+
+  i,
+  em {
+    @include bold-italic;
+  }
+}
+
+i,
+em {
+  @include italic;
+
+  b,
+  strong {
+    @include bold-italic;
+  }
+}
+
+a,
+button {
+  @include font-size-s;
+  @include normal;
+  color: $color-primary;
+  width: 100%;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.iframe-link {
+  display: none;
+
+  @media #{$mq-medium} {
+    display: block;
+  }
+}
+
+.show-mobile {
+  display: block;
+
+  @media #{$mq-medium} {
+    display: none;
+  }
+}

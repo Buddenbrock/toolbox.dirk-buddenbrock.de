@@ -1,0 +1,44 @@
+@mixin font-size-xs {
+  font-size: .8rem /*1rem*/;
+  line-height: 1.2rem /*1.6rem*/;
+
+  @media #{$mq-small} {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@mixin font-size-s {
+  font-size: 1rem /*1.2rem*/;
+  line-height: 1.4rem /*1.8rem*/;
+
+  @media #{$mq-small} {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  }
+}
+
+@mixin font-size-m {
+  font-size: calc(1rem + 1.25vw) /*2rem*/;
+  line-height: calc(1rem + 2.65vw) /*2.6rem*/;
+
+  @media #{$mq-small} {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+
+@mixin font-size-l {
+  font-size: calc(1.25rem + 1.875vw) /*3rem*/;
+  line-height: calc(1.25rem + 2.275vw) /*3.6rem*/;
+
+  @media #{$mq-small} {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+@mixin font-size-xl {
+  font-size: calc(2.25rem + 1.875vw) /*3rem*/;
+  line-height: calc(2.25rem + 2.275vw) /*3.6rem*/;
+}

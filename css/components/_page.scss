@@ -1,0 +1,11 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+
+  @media #{$mq-medium} {
+    flex-flow: row nowrap;
+    overflow: hidden;
+  }
+}
