@@ -45,25 +45,25 @@ html {
 
 @font-face {
   font-family: Open Sans;
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("../Fonts/OpenSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: Open Sans;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+  src: url("../Fonts/OpenSans-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
 }
 @font-face {
   font-family: Open Sans;
-  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("../Fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: Open Sans;
-  src: url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  src: url("../Fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
