@@ -159,7 +159,15 @@ main {
 }
 main iframe {
   height: 100%;
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
   width: 100%;
+  will-change: margin-left, width;
+}
+
+.sidebar.active + main iframe {
+  margin-left: 450px;
+  width: calc(100% - 450px);
 }
 
 .accordion {
