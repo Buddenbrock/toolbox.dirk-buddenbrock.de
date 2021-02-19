@@ -1,5 +1,5 @@
 <?php
-$base = 'https://toolbox.dirk-buddenbrock.de.dev.local:8890/';
+$base = 'https://toolbox.dirk-buddenbrock.de/';
 
 $websiteTitle = 'Toolbox';
 $title = 'Toolbox';
