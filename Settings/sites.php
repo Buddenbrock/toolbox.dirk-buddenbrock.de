@@ -8,21 +8,21 @@ $sites = [
                 ['https://www.heymeta.com/', 'Meta Data'],
                 ['http://www.fluid-converter.com/', 'Fluid Snippets', 'external'],
                 ['https://www.blobmaker.app/', 'Blopmaker'],
-                ['https://www.cssmatic.com/box-shadow', 'Box Shadow'],
+                ['https://www.cssmatic.com/box-shadow', 'Box Shadow', 'external'],
                 ['https://search.google.com/search-console/welcome', 'Google Search Console', 'external'],
                 ['http://entity-lookup.leftlogic.com/', 'HTML Entity Lookup', 'external'],
                 ['http://www.skoom.de/service/email-verschluesseln.xtc', 'Mailverschlüsselung', 'external'],
                 ['https://fontie.pixelsvsbytes.com/webfont-generator', 'Webfont generator'],
-                ['https://www.unitag.io/qrcode', 'QR generator'],
+                ['https://www.unitag.io/qrcode', 'QR Generator', 'external'],
                 ['https://cssgrid-generator.netlify.app/', 'Css Grid generator'],
             ]
         ],
         [
             'Code Beispiele',
             [
-                ['https://codepen.io/', 'Codepen'],
+                ['https://codepen.io/', 'Codepen', 'external'],
                 ['https://uglyduck.ca/responsive-tables/', 'responsive Tabelle'],
-                ['https://www.nitsan.in/blog/itug-week-27-step-by-step-guide-to-typo3-composer/', 'Step by step guide to typo3 composer'],
+                ['https://www.nitsan.in/blog/itug-week-27-step-by-step-guide-to-typo3-composer/', 'Step by step guide to typo3 composer', 'external'],
                 ['https://www.cssscript.com/demo/create-nice-clean-form-fields-using-pure-css-formbase/', 'Clear pure CSS form fields'],
                 ['https://pineco.de/using-css-counters/', 'CSS Counter', 'external'],
                 ['https://css-tricks.com/practical-css-scroll-snapping/', 'CSS scroll snapping'],
@@ -41,17 +41,17 @@ $sites = [
         [
             'CSS Snippets',
             [
-                ['https://codepen.io/GeorgePark/pen/zYOegLr', 'Fade-in Text'],
-                ['https://codepen.io/asistapl/pen/JXJKdJ', 'Text Shadow'],
-                ['https://codepen.io/Podgro/pen/BQwjrz', 'Fullpage content'],
-                ['https://codepen.io/incrediblecast/pen/aboPwxv', 'CSS Text Slider 1'],
-                ['https://codepen.io/spacedino/pen/pbwwjA', 'CSS Text Slider 2'],
-                ['https://codepen.io/alphardex/pen/MWWEmLK', 'Menu Hover Underline'],
-                ['https://codepen.io/eliortabeka/pen/JOGVNW', 'Pure CSS Accordion'],
-                ['https://codepen.io/knyttneve/pen/qpEZKx', 'Form valid Selector'],
-                ['https://codepen.io/rakeizer/pen/QQRBoZ', 'Form input switch'],
-                ['https://codepen.io/AbubakerSaeed/pen/QPOZdY', 'Form input radio'],
-                ['https://codepen.io/z-/pen/BaBxgro', 'Dark mode switch'],
+                ['https://codepen.io/GeorgePark/pen/zYOegLr', 'Fade-in Text', 'external'],
+                ['https://codepen.io/asistapl/pen/JXJKdJ', 'Text Shadow', 'external'],
+                ['https://codepen.io/Podgro/pen/BQwjrz', 'Fullpage content', 'external'],
+                ['https://codepen.io/incrediblecast/pen/aboPwxv', 'CSS Text Slider 1', 'external'],
+                ['https://codepen.io/spacedino/pen/pbwwjA', 'CSS Text Slider 2', 'external'],
+                ['https://codepen.io/alphardex/pen/MWWEmLK', 'Menu Hover Underline', 'external'],
+                ['https://codepen.io/eliortabeka/pen/JOGVNW', 'Pure CSS Accordion', 'external'],
+                ['https://codepen.io/knyttneve/pen/qpEZKx', 'Form valid Selector', 'external'],
+                ['https://codepen.io/rakeizer/pen/QQRBoZ', 'Form input switch', 'external'],
+                ['https://codepen.io/AbubakerSaeed/pen/QPOZdY', 'Form input radio', 'external'],
+                ['https://codepen.io/z-/pen/BaBxgro', 'Dark mode switch', 'external'],
                 ['https://css-tricks.com/snippets/css/css-triangle/', 'CSS Dreieck'],
                 ['https://every-layout.dev/blog/multi-column-manipulation/', 'Multi-column manipulation'],
             ]
@@ -59,12 +59,12 @@ $sites = [
         [
             'JS Snippets',
             [
-                ['https://codepen.io/minten/pen/aLqJmV', 'Regen'],
-                ['https://codepen.io/AllThingsSmitty/pen/JJavZN', 'Countdown'],
-                ['https://codepen.io/markhillard/pen/Hjcwu', 'Audioplayer'],
-                ['https://codepen.io/soulwire/pen/mErPAK', 'Text Scramble Effect'],
-                ['https://codepen.io/ahmadbassamemran/pen/VQwPGr', 'Hamburger Animation'],
-                ['https://codepen.io/ig_design/pen/zXVGem', 'Cursor Progress Indicator'],
+                ['https://codepen.io/minten/pen/aLqJmV', 'Regen', 'external'],
+                ['https://codepen.io/AllThingsSmitty/pen/JJavZN', 'Countdown', 'external'],
+                ['https://codepen.io/markhillard/pen/Hjcwu', 'Audioplayer', 'external'],
+                ['https://codepen.io/soulwire/pen/mErPAK', 'Text Scramble Effect', 'external'],
+                ['https://codepen.io/ahmadbassamemran/pen/VQwPGr', 'Hamburger Animation', 'external'],
+                ['https://codepen.io/ig_design/pen/zXVGem', 'Cursor Progress Indicator', 'external'],
             ]
         ],
         [
@@ -76,13 +76,13 @@ $sites = [
                 ['http://brandcolors.net/', 'Brand Colors', 'external'],
                 ['https://www.canva.com/colors/color-palette-generator/', 'Image Color Analyser'],
                 ['https://www.webfx.com/web-design/random-color-picker/', 'Random Color Picker'],
-                ['https://vimeo.com/114900089', 'Lektion zur Farbtheorie'],
+                ['https://vimeo.com/114900089', 'Lektion zur Farbtheorie', 'external'],
             ]
         ],
         [
             'Grafisch',
             [
-                ['https://facebook.design/devices', 'Facebook Device Mockups'],
+                ['https://facebook.design/devices', 'Facebook Device Mockups', 'external'],
                 ['https://placeholder.com/', 'Image Platzhalter'],
                 ['https://picsum.photos/?ref=ewebdesign.com', 'Image Platzhalter'],
                 ['https://icons8.com/animated-icons', 'Animierte Icons', 'external'],
@@ -138,7 +138,6 @@ $sites = [
                 ['https://bitsofco.de/the-target-trick/#target-test', 'Target Pseudo-Klasse'],
                 ['https://css-tricks.com/patterns-for-practical-css-custom-properties-use/', 'Muster für die Verwendung von praktischen benutzerdefinierten CSS-Eigenschaften'],
                 ['https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/', 'axiomatisches CSS'],
-                ['http://getbem.com/introduction/', 'bem - block element modifier'],
             ]
         ],
         [
@@ -156,9 +155,9 @@ $sites = [
         [
             'Sound',
             [
-                ['https://freemusicarchive.org/', 'FMA Bibliothek'],
-                ['https://business.facebook.com/creatorstudio/?tab=ct_sound_collection&collection_id=all_pages&sound_collection_tab=sound_tracks', 'Facebook Sound Bibliothek'],
-                ['https://audiohub.de/', 'AudioHub'],
+                ['https://freemusicarchive.org/', 'FMA Bibliothek', 'external'],
+                ['https://business.facebook.com/creatorstudio/?tab=ct_sound_collection&collection_id=all_pages&sound_collection_tab=sound_tracks', 'Facebook Sound Bibliothek', 'external'],
+                ['https://audiohub.de/', 'AudioHub', 'external'],
                 ['https://audiosocket.com/', 'AudioSocket'],
             ]
         ],
@@ -182,9 +181,9 @@ $sites = [
                 ['https://jweiland.net/typo3/versionen-und-updates/version-9.html', 'TYPO3 9 LTS', 'external'],
                 ['https://typo3.github.io/TYPO3.Icons/', 'TYPO3 Icons', 'external'],
                 ['https://www.tritum.de/typo3-cms/typo3-extensions/typo3-form-framework/', 'TYPO3 Form Framework'],
-                ['https://www.nitsan.in/blog/simple-steps-to-configure-ckeditor-typo3/', 'TYPO3 rte_CKeditor'],
-                ['https://www.nitsan.in/blog/30-tips-tricks-for-optimum-typo3-website-speed-and-performance/', 'TYPO3 Speed Performance'],
-                ['https://tmp.daniel-siepmann.de/events/t3crr18/workshop-extension/', 'TYPO3 Extension Workshop von Daniel Siepmann'],
+                ['https://www.nitsan.in/blog/simple-steps-to-configure-ckeditor-typo3/', 'TYPO3 rte_CKeditor', 'external'],
+                ['https://www.nitsan.in/blog/30-tips-tricks-for-optimum-typo3-website-speed-and-performance/', 'TYPO3 Speed Performance', 'external'],
+                ['https://tmp.daniel-siepmann.de/events/t3crr18/workshop-extension/', 'TYPO3 Extension Workshop von Daniel Siepmann', 'external'],
                 ['https://typo3-videotraining.coachy.net/optin/mein-geschenk-das-videotraining-zu-typo3-8-lts/', 'TYPO3 8 LTS Videotraining', 'external'],
             ]
         ],
@@ -196,7 +195,7 @@ $sites = [
             ]
         ],
         [
-            'TYPO3 // Upgrade von TYPO3 8 auf 9',
+            'TYPO3 // Upgrade von TYPO3 Version 8 auf Version 9',
             [
                 ['https://vimeo.com/317999517', '01: Vorbereitungen', 'external'],
                 ['https://vimeo.com/317999805', '02: Upgrade durchführen', 'external'],
@@ -213,44 +212,7 @@ $sites = [
             ]
         ],
         [
-            'TYPO3 // jweiland Musterprojekt TYPO3 7',
-            [
-                ['https://vimeo.com/147596329', '01: Unterschiede zwischen Version 7 und 6.2', 'external'],
-                ['https://vimeo.com/147597226', '02: Das Musterprojekt installieren', 'external'],
-                ['https://vimeo.com/147600026', '03: Struktur der TypoScript-Templates', 'external'],
-                ['https://vimeo.com/147688907', '04: Verwendete CSS-Dateien', 'external'],
-                ['https://vimeo.com/147689005', '05: Das Logo im Kopfbereich austauschen', 'external'],
-                ['https://vimeo.com/147689327', '06: Bilder im Kopfbereich anpassen', 'external'],
-                ['https://vimeo.com/147831517', '07: Schriftarten und Farben verändern', 'external'],
-                ['https://vimeo.com/147831638', '08: Inhaltselemente farblich hervorheben', 'external'],
-                ['https://vimeo.com/147832741', '09: Backendlayouts verwenden', 'external'],
-                ['https://vimeo.com/147832788', '10: Kontaktformular: Empfängeradresse und Betreff der E-Mail ändern', 'external'],
-                ['https://vimeo.com/147832898', '11: Kontaktformular: Eingabefelder ändern, hinzufügen und löschen', 'external'],
-                ['https://vimeo.com/147833823', '12: Eigenes Favicon verwenden', 'external'],
-                ['https://vimeo.com/147834118', '13: Tägliche Backups', 'external'],
-            ]
-        ],
-        [
-            'TYPO3 // jweiland Musterprojekt TYPO3 8',
-            [
-                ['https://vimeo.com/218191210', '01: Übersicht, Funktionen, Unterschiede zu früheren Versionen', 'external'],
-                ['https://vimeo.com/218191413', '02: Navigationsvarianten', 'external'],
-                ['https://vimeo.com/218191512', '03: Lightbox-Effekt für Klick-Vergrößern aktivieren', 'external'],
-                ['https://vimeo.com/218191607', '04: Seitenlayouts verwenden', 'external'],
-                ['https://vimeo.com/218191736', '05: Inhalte des Footers pflegen', 'external'],
-                ['https://vimeo.com/218191785', '06: Die Template-Extension im Überblick', 'external'],
-                ['https://vimeo.com/218191875', '07: Das Hintergrundbild im Kopfbereich', 'external'],
-                ['https://vimeo.com/218192025', '08: Die Optionen im Konstanteneditor', 'external'],
-                ['https://vimeo.com/218192129', '09: Welche Funktionen hat die Extension cs_seo', 'external'],
-                ['https://vimeo.com/218422893', '10: Indizierung der Website durch Suchmaschinen erlauben', 'external'],
-                ['https://vimeo.com/218425657', '11: Online-Dokumentation im Backend', 'external'],
-                ['https://vimeo.com/218752078', '12: Das Musterprojekt 8 selbst installieren', 'external'],
-                ['https://vimeo.com/222793554', '13: Weitere Sprachen hinzufügen', 'external'],
-                ['https://vimeo.com/226410795', '14: Das Favicon austauschen', 'external'],
-            ]
-        ],
-        [
-            'TYPO3 // jweiland Musterprojekt TYPO3 9',
+            'TYPO3 // jweiland Musterprojekt TYPO3 Version 9',
             [
                 ['https://vimeo.com/307711861', '01: Überblick', 'external'],
                 ['https://vimeo.com/307712023', '02: Navigationsarten und Farbvarianten', 'external'],
@@ -271,6 +233,12 @@ $sites = [
             ]
         ],
         [
+            'TYPO3 // jweiland Musterprojekt TYPO3 version 10',
+            [
+                //['', '', 'external']
+            ]
+        ],
+        [
             'TYPO3 // Styleguide',
             [
                 ['https://www.youtube.com/watch?v=AeG0s54MHGE', '01: Feature Demo - Style Guide', 'external'],
@@ -280,16 +248,16 @@ $sites = [
         [
             'TYPO3 // Site Packages',
             [
-                ['https://www.youtube.com/watch?v=HtBmim7pc0o', '01: ', 'external'],
-                ['https://www.youtube.com/watch?v=deSMVfCSCXY', '02: ', 'external'],
-                ['https://www.youtube.com/watch?v=SEoWOBT0rQE', '03: ', 'external'],
+                ['https://www.youtube.com/watch?v=HtBmim7pc0o', '01: Site Packages', 'external'],
+                ['https://www.youtube.com/watch?v=deSMVfCSCXY', '02: Site Packages', 'external'],
+                ['https://www.youtube.com/watch?v=SEoWOBT0rQE', '03: Site Packages', 'external'],
             ]
         ],
         [
             'TYPO3 // Fun with Menus',
             [
-                ['https://www.youtube.com/watch?v=C_XepEsnbIQ', '01: ', 'external'],
-                ['https://www.youtube.com/watch?v=BYceTXZuoJs', '02: ', 'external'],
+                ['https://www.youtube.com/watch?v=C_XepEsnbIQ', '01: Fun with Menus', 'external'],
+                ['https://www.youtube.com/watch?v=BYceTXZuoJs', '02: Fun with Menus', 'external'],
             ]
         ],
         [
@@ -312,12 +280,12 @@ $sites = [
         [
             'TYPO3 // Essential Solutions for TYPO3 Productivity',
             [
-                ['https://www.youtube.com/watch?v=EiIKz-wK6z8', '01: ', 'external'],
-                ['https://www.youtube.com/watch?v=zy9sAlYRmnA', '01: ', 'external'],
+                ['https://www.youtube.com/watch?v=EiIKz-wK6z8', '01: Essential Solutions for TYPO3 Productivity', 'external'],
+                ['https://www.youtube.com/watch?v=zy9sAlYRmnA', '01: Essential Solutions for TYPO3 Productivity', 'external'],
             ]
         ],
         [
-            'TYPO3 8 für Redakteure',
+            'TYPO3 // Version 8 für Redakteure',
             [
                 ['https://vimeo.com/229820304', '01: Einleitung, Konzepte und Begriffe', 'external'],
                 ['https://vimeo.com/229820362', '02: Anmeldung am Backend und Überblick', 'external'],
@@ -365,7 +333,7 @@ $sites = [
             ]
         ],
         [
-            'TYPO3 9 für Redakteure',
+            'TYPO3 // Version 9 für Redakteure',
             [
                 ['https://vimeo.com/349633596', '01: Wichtige Grundbegriffe aus der TYPO3 Welt', 'external'],
                 ['https://vimeo.com/349633812', '02: Anmeldung am Backend', 'external'],
@@ -373,7 +341,7 @@ $sites = [
                 ['https://vimeo.com/349633932', '04: Die verschiedenen Seitentypen', 'external'],
                 ['https://vimeo.com/349843692', '05: Arbeiten mit dem Seitenbaum', 'external'],
                 ['https://vimeo.com/349846349', '06: Die Seiteneigenschaften', 'external'],
-                ['https://vimeo.com/350073493 ', '07: Die Seiteneigenschaften - Social Media', 'external'],
+                ['https://vimeo.com/350073493', '07: Die Seiteneigenschaften - Social Media', 'external'],
                 ['https://vimeo.com/350073572', '08: Die Seiteneigenschaften - SEO', 'external'],
                 ['https://vimeo.com/350073731', '09: URL-Segmente und Redirects', 'external'],
                 ['https://vimeo.com/350940140', '10: Dateien verwalten & organisieren - Übersicht', 'external'],
@@ -392,35 +360,34 @@ $sites = [
                 ['https://vimeo.com/359740261', '23: Inhaltselement “Datensätze einfügen”', 'external'],
                 ['https://vimeo.com/359740611', '24: Inhaltselement “Tabelle”', 'external'],
                 ['https://vimeo.com/359741216', '25: Inhaltselemente für Menüs', 'external'],
-                ['', '26: ', 'external'],
-                ['', '27: ', 'external'],
-                ['', '28: ', 'external'],
-                ['', '29: ', 'external'],
-                ['', '30: ', 'external'],
-                ['', '31: ', 'external'],
-                ['', '32: ', 'external'],
-                ['', '33: ', 'external'],
-                ['', '34: ', 'external'],
-                ['', '35: ', 'external'],
-                ['', '36: ', 'external'],
-                ['', '37: ', 'external'],
-                ['', '38: ', 'external'],
-                ['', '39: ', 'external'],
-                ['', '40: ', 'external'],
-                ['', '41: ', 'external'],
-                ['', '42: ', 'external'],
-                ['', '43: ', 'external'],
-                ['', '44: ', 'external'],
-                ['', '45: ', 'external'],
-                ['', '46: ', 'external'],
-                ['', '47: ', 'external'],
-                ['', '48: ', 'external'],
-                ['', '49: ', 'external'],
-            ]
-        ],
-        [
-            'Dummy',
-            [
+                ['https://vimeo.com/360256642', '26: Inhaltselemente ”HTML”', 'external'],
+                ['https://vimeo.com/360257058', '27: Inhaltselement “Aufzählung”', 'external'],
+                ['https://vimeo.com/360257210', '28: Inhaltselement “Trenner”', 'external'],
+                ['https://vimeo.com/360257378', '29: Inhaltselemente bearbeiten, verschieben, kopieren', 'external'],
+                ['https://vimeo.com/360504875', '30: Einzelne Inhaltselemente auf andere Seiten verschieben oder kopieren', 'external'],
+                ['https://vimeo.com/360505119', '31: Mehrere Inhaltselemente gleichzeitig verschieben, kopieren oder löschen', 'external'],
+                ['https://vimeo.com/360505687', '32: Elemente zeitgesteuert veröffentlichen', 'external'],
+                ['https://vimeo.com/360506042', '33: Tipps zur Suchmaschinenoptimierung', 'external'],
+                ['https://vimeo.com/360507161', '34: Funktionen des Listenmoduls', 'external'],
+                ['https://vimeo.com/360766424', '35: Serien-/Stapelbearbeitung von Elementen', 'external'],
+                ['https://vimeo.com/360766917', '36: Gelöschte Elemente aus dem Paperkorb wiederherstellen', 'external'],
+                ['https://vimeo.com/360767416', '37: Änderungen rückgängig machen', 'external'],
+                ['https://vimeo.com/360768160', '38: Was ist der Frontend-Cache', 'external'],
+                ['https://vimeo.com/361033546', '39: Einstellungen im Benutzerkonto', 'external'],
+                ['https://vimeo.com/361034393', '40: Dateien ersetzen', 'external'],
+                ['https://vimeo.com/361034625', '41: Kategorien nutzen', 'external'],
+                ['https://vimeo.com/361035490', '42: Was sind Extensions und Plugins?', 'external'],
+                ['https://vimeo.com/361241073', '43: Frontend-Zugriffe nur für angemeldete Benutzer', 'external'],
+                ['https://vimeo.com/361241770', '44: Was sind Backendbenutzer und Backendbenutzergruppen?', 'external'],
+                ['https://vimeo.com/361242062', '45: Suchen im Backend', 'external'],
+                ['https://vimeo.com/361242388', '46: Mehrsprachige Websites Teil 1: Seiten übersetzen', 'external'],
+                ['https://vimeo.com/361246650', '47: Mehrsprachige Websites Teil 2: Inhalte übersetzen', 'external'],
+                ['https://vimeo.com/361247447', '48: Mehrsprachige Websites Teil 3: Übersetzungsansicht im Listenmodul', 'external'],
+                ['https://vimeo.com/361247639', '49: Mehrsprachige Websites Teil 4: Metadaten von Dateien übersetzen', 'external'],
+                ['https://vimeo.com/', '26: ', 'external'],
+                ['https://vimeo.com/', '26: ', 'external'],
+                ['https://vimeo.com/', '26: ', 'external'],
+                ['https://vimeo.com/', '26: ', 'external'],
             ]
         ]
     ]
