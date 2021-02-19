@@ -77,7 +77,7 @@
                                             }
                                         }
                                     } else {
-                                        showAlert('warning', 'Leider konnten wir in dieser Kategorie keine Tools für dich finden.');
+                                        showAlert('error', 'Leider konnten wir in dieser Kategorie keine Daten für dich finden.');
                                     }
                                 ?>
                             </ul>
