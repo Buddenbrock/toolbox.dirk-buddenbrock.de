@@ -39,7 +39,7 @@
     <meta name="robots" content="index,nofollow">
     <meta name="version" content="<?=($version)?>">
 
-    <link rel="canonical" href="<?=($canonical)?>">
+    <link rel="canonical" href="<?=($base)?>">
 
     <link rel="stylesheet" href="Css/main.css">
 </head>
