@@ -90,7 +90,7 @@
                     }
                 ?>
 
-                <a class="alert" href="https://www.dirk-buddenbrock.de" target="_blank">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
+                <a class="alert footer" href="https://www.dirk-buddenbrock.de" target="_blank">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
             </nav>
         </div>
         <main>
