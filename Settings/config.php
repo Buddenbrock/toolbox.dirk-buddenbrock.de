@@ -17,6 +17,6 @@ $imageWidth = '1798';
 $robots = 'noindex,nofollow';
 $canonical = $base;
 $date = '2020-09-05';
-$version = '1.0.0';
+$version = '2.0.0';
 
 ?>
