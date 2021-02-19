@@ -1,0 +1,64 @@
+.sidebar {
+  background-color: $color-grey;
+  box-shadow: 0 0 4px 0 rgba(#393939, .2);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: left .3s ease-in-out;
+  width: 100vw;
+  will-change: left;
+  z-index: 2;
+
+  @media #{$mq-medium} {
+    left: -450px;
+    max-width: 450px;
+  }
+
+  &__button {
+    background-color: $color-primary;
+    background-image: url('../Images/icon-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    color: $color-white;
+    cursor: pointer;
+    height: 3rem;
+    position: absolute;
+    right: -2.25rem;
+    top: 1rem;
+    transform: scaleX(1);
+    transition: background-color .3s ease-in-out, right .3s ease-in-out, transform .3s ease-in-out, width .3s ease-in-out;
+    width: 2.25rem;
+    will-change: background-color, right, transform, width;
+
+    &:hover {
+      right: -2.75rem;
+      width: 2.75rem;
+    }
+  }
+
+
+  nav {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 2.5rem 2rem;
+  }
+
+  &.active {
+    @media #{$mq-medium} {
+      left: 0;
+    }
+
+    & + main {
+      width: calc(100% - 450px) !important;
+    }
+  }
+
+  &.active &__button {
+    transform: scaleX(-1);
+  }
+}

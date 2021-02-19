@@ -1,0 +1,14 @@
+main {
+  display: none;
+  height: 100vh;
+  width: 100vh;
+
+  @media #{$mq-medium} {
+    display: inline;
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #1d71b8;
+  --color-primary-light: #5b99ce;
+  --color-secondary: #93c01f;
+  --color-white: #fff;
+  --color-grey: #f6f6f6;
+  --color-grey-dark: #dfdfdf;
+  --color-grey-darker: #131313;
+  --color-error: #842029;
+  --color-error-light: #f8d7da;
+  --color-warning: #664d03;
+  --color-warning-light: #fff3cd;
+  --color-success: #0f5132;
+  --color-success-light: #d1e7dd;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+body {
+  background-color: var(--color-primary-light);
+  font-family: "Open Sans";
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1.5rem 3rem;
+}
+header img {
+  height: 2rem;
+  width: auto;
+}
+
+.sidebar {
+  background-color: var(--color-grey);
+  box-shadow: 0 0 4px 0 rgba(57, 57, 57, 0.2);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: left 0.3s ease-in-out;
+  width: 100vw;
+  will-change: left;
+  z-index: 2;
+}
+@media only screen and (min-width: 52em) {
+  .sidebar {
+    left: -450px;
+    max-width: 450px;
+  }
+}
+.sidebar__button {
+  background-color: var(--color-primary);
+  background-image: url("../Images/icon-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  color: var(--color-white);
+  cursor: pointer;
+  height: 3rem;
+  position: absolute;
+  right: -2.25rem;
+  top: 1rem;
+  transform: scaleX(1);
+  transition: background-color 0.3s ease-in-out, right 0.3s ease-in-out, transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  width: 2.25rem;
+  will-change: background-color, right, transform, width;
+}
+.sidebar__button:hover {
+  right: -2.75rem;
+  width: 2.75rem;
+}
+.sidebar nav {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 2.5rem 2rem;
+}
+@media only screen and (min-width: 52em) {
+  .sidebar.active {
+    left: 0;
+  }
+}
+.sidebar.active + main {
+  width: calc(100% - 450px) !important;
+}
+.sidebar.active .sidebar__button {
+  transform: scaleX(-1);
+}
+
+main {
+  display: none;
+  height: 100vh;
+  width: 100vh;
+}
+@media only screen and (min-width: 52em) {
+  main {
+    display: inline;
+  }
+}
+main iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.accordion {
+  background-color: var(--color-white);
+  box-shadow: 0 0 4px 0 var(--color-grey-dark);
+  margin-bottom: 0.5rem;
+}
+.accordion .button {
+  background-color: var(--color-white);
+  color: var(--color-grey-darker);
+  cursor: pointer;
+  display: block;
+  padding: 0.75rem 3.5rem 0.75rem 1rem;
+  text-align: left;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  will-change: background-color;
+}
+.accordion .button::after {
+  background-image: url("../Images/icon-add.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  text-align: center;
+  top: 0.75rem;
+  transition: backgroud-image 0.3s ease-in-out;
+  width: 1.5rem;
+  will-change: background-image;
+}
+.accordion .button:hover {
+  background-color: var(--color-grey-dark);
+  font-weight: bold;
+}
+.accordion .button.active {
+  background-color: var(--color-grey-dark);
+  font-weight: bold;
+}
+.accordion .button.active::after {
+  background-image: url("../Images/icon-close.svg");
+}
+.accordion .button.active + .panel {
+  height: auto;
+}
+.accordion .panel {
+  height: 0;
+  overflow: hidden;
+}
+.accordion .panel ul {
+  list-style: none;
+  text-align: left;
+}
+.accordion .panel li {
+  border-bottom: 1px solid var(--color-grey-dark);
+}
+.accordion .panel li a,
+.accordion .panel li button {
+  background-color: transparent;
+  color: var(--color-grey-darker);
+  cursor: pointer;
+  display: block;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  width: 100%;
+}
+.accordion .panel li a:hover,
+.accordion .panel li button:hover {
+  background-color: var(--color-grey);
+}
+
+.iframe-link {
+  display: none !important;
+}
+@media only screen and (min-width: 52em) {
+  .iframe-link {
+    display: block !important;
+  }
+}
+
+.show-mobile {
+  display: block !important;
+}
+@media only screen and (min-width: 52em) {
+  .show-mobile {
+    display: none !important;
+  }
+}
+
+.alert {
+  background-color: var(--color-white);
+  box-shadow: 0 0 4px 0 var(--color-grey-dark);
+  color: var(--color-grey-darker);
+  display: block;
+  padding: 0.75rem 1rem;
+}
+.alert.error {
+  background-color: var(--color-error-light);
+  color: var(--color-error);
+}
+.alert.warning {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning);
+}
+.alert.success {
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+}
+
+[class^=icon-]::before,
+[class*=" icon-"]::before {
+  display: none;
+}
+@media only screen and (min-width: 52em) {
+  [class^=icon-]::before,
+[class*=" icon-"]::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    top: 0.2rem;
+    width: 1rem;
+  }
+}
+
+.icon-external::before {
+  background-image: url("../Images/icon-link.svg");
+}
+.icon-download::before {
+  background-image: url("../Images/icon-download.svg");
+}
+
+/*# sourceMappingURL=main.css.map */
