@@ -8,6 +8,7 @@ main {
   }
 
   iframe {
+    background-color: $color-white;
     height: 100%;
     margin-left: 0;
     transition: margin-left .3s ease-in-out, width .3s ease-in-out;
