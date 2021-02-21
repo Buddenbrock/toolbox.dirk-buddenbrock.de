@@ -10,5 +10,5 @@ $imageAlt = 'Der Logo-Schriftzug Toolbax platziert auf blauen Grund';
 $imageHeight = '1080';
 $imageWidth = '1920';
 
-$version = '2.0.2';
+$version = '2.0.3';
 ?>
