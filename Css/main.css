@@ -48,24 +48,28 @@ html {
   src: url("../Fonts/OpenSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Open Sans;
   src: url("../Fonts/OpenSans-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Open Sans;
   src: url("../Fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: Open Sans;
   src: url("../Fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
+  font-display: swap;
 }
 body {
   background-color: var(--color-primary-light);
@@ -109,8 +113,8 @@ header img {
 }
 @media only screen and (min-width: 52em) {
   .sidebar {
-    left: -450px;
-    max-width: 450px;
+    left: -500px;
+    max-width: 500px;
   }
 }
 .sidebar__button {
@@ -171,13 +175,14 @@ main iframe {
 }
 
 .sidebar.active + main iframe {
-  margin-left: 450px;
-  width: calc(100% - 450px);
+  margin-left: 500px;
+  width: calc(100% - 500px);
 }
 
 .accordion {
   background-color: var(--color-white);
   box-shadow: 0 0 4px 0 var(--color-grey-dark);
+  border: 1px solid var(--color-grey-dark);
   margin-bottom: 0.5rem;
 }
 .accordion .button {
@@ -220,6 +225,15 @@ main iframe {
 .accordion .button.active + .panel {
   height: auto;
 }
+.accordion .button label {
+  background: var(--color-grey);
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-grey-dark);
+  float: left;
+  font-size: 0.75rem;
+  margin-right: 1rem;
+  padding: 0.25rem 0.75rem;
+}
 .accordion .panel {
   height: 0;
   overflow: hidden;
@@ -244,6 +258,17 @@ main iframe {
 .accordion .panel li a:hover,
 .accordion .panel li button:hover {
   background-color: var(--color-grey);
+}
+.accordion .panel li label {
+  background: var(--color-white);
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-grey-dark);
+  float: left;
+  font-size: 0.75rem;
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+  position: relative;
+  top: -0.2rem;
 }
 
 .iframe-link {
@@ -291,16 +316,21 @@ main iframe {
 @media only screen and (min-width: 52em) {
   [class^=icon-]::before,
 [class*=" icon-"]::before {
+    background-color: var(--color-white);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-grey-dark);
     content: "";
     display: inline-block;
-    height: 1rem;
-    margin-left: 1rem;
+    float: left;
+    font-size: 0.75rem;
+    height: 1.75rem;
+    margin-right: 1rem;
     position: relative;
-    top: 0.2rem;
-    width: 1rem;
+    top: -0.2rem;
+    width: 1.75rem;
   }
 }
 
@@ -309,6 +339,11 @@ main iframe {
 }
 .icon-download::before {
   background-image: url("../Images/icon-download.svg");
+}
+
+label + [class^=icon-]::before,
+label + [class*=" icon-"]::before {
+  margin-left: -0.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */
