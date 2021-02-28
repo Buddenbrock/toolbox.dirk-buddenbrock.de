@@ -3,6 +3,7 @@
     include_once('Settings/sites.php');
     include_once('Settings/functions.php');
 ?>
+<!DOCTYPE html>
 <html lang="de-DE">
 <head>
     <meta charset="utf-8">
@@ -17,6 +18,7 @@
     <meta name="description" content="<?=($description)?>">
     <meta name="author" content="<?=($author)?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="public"/>
 
     <meta property="og:title" content="<?=($title)?>" />
     <meta property="og:description" content="<?=($description)?>️" />
@@ -90,7 +92,7 @@
                     }
                 ?>
 
-                <a class="alert footer" href="https://www.dirk-buddenbrock.de" target="_blank">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
+                <a class="alert footer" href="https://www.dirk-buddenbrock.de" target="_blank" rel="noopener" rel="noreferrer">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
             </nav>
         </div>
         <main>
