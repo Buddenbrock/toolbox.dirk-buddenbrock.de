@@ -12,5 +12,6 @@ $fonts:
     src: url('../Fonts/#{$id}.ttf') format('truetype');
     font-style: #{$style};
     font-weight: #{$weight};
+    font-display: swap;
   }
 }

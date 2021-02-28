@@ -1,6 +1,7 @@
 .accordion {
   background-color: $color-white;
   box-shadow: 0 0 4px 0 $color-grey-dark;
+  border: 1px solid $color-grey-dark;
   margin-bottom: .5rem;
 
   .button {
