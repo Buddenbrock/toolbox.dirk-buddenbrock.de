@@ -60,26 +60,81 @@
                 ?>
                     <div class="accordion">
                         <button class="button">
-                            <h2><?=($section[0])?></h2>
+                            <h2>
+                                <?php
+                                    if($section[category]) {
+                                        echo '<label>' . $section[category] . '</label>';
+                                    }
+                                    echo $section[title];
+                                ?>
+                            </h2>
                         </button>
                         <div class="panel">
                             <ul>
                                 <?php
-                                    if($section[1]) {
-                                        foreach ($section[1] as $item) {
-                                            if($item[0]) {
-                                                echo '<li>';
-                                                if($item[2]) {
-                                                    echo '<a href="' . $item[0] . '" title="' . $item[1] . '" target="_blank">' . $item[1] . '<span class="icon icon-' . $item[2] . '"></span></a>';
+                                    if($section[links]) {
+                                        foreach ($section[links] as $item) {
+                                            echo '<li>';
+
+                                            if ($section[completeExternal] === true) {
+
+                                                if($item[label]) {
+                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                            . '<label>' . $item[label] . '</label>'
+                                                            . '<i class="icon icon-external"></i>'
+                                                            . $item[title]
+                                                        . '</a>';
                                                 } else {
-                                                    echo '<button class="iframe-link" data-link="' . $item[0] . '">' . $item[1] . '</button>';
-                                                    echo '<a class="show-mobile" href="' . $item[0] . '" title="' . $item[1] . '" target="_blank">' . $item[1] . '</a>';
+                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                        . '<i class="icon icon-external"></i>'
+                                                        . $item[title]
+                                                        . '</a>';
                                                 }
-                                                echo '</li>';
+
+                                            } else if($item[additionalClass]) {
+                                                
+                                                if($item[label]) {
+                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                        . '<label>' . $item[label] . '</label>'
+                                                        . '<i class="icon icon-' . $item[additionalClass] . '"></i>'
+                                                        . $item[title]
+                                                        . '</a>';
+                                                } else {
+                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                        . '<i class="icon icon-' . $item[additionalClass] . '"></i>'
+                                                        . $item[title]
+                                                        . '</a>';
+                                                }
+
+                                            } else {
+
+                                                if($item[label]) {
+                                                    echo '<button class="iframe-link" data-link="' . $item[link] . '">'
+                                                        . '<label>' . $item[label] . '</label>'
+                                                        . $item[title]
+                                                        . '</button>';
+                                                    echo '<a class="show-mobile" href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                        . '<label>' . $item[label] . '</label>'
+                                                        . $item[title]
+                                                        . '</a>';
+                                                } else {
+                                                    echo '<button class="iframe-link" data-link="' . $item[link] . '">'
+                                                        . $item[title]
+                                                        . '</button>';
+                                                    echo '<a class="show-mobile" href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                        . $item[title]
+                                                        . '</a>';
+                                                }
+
+
                                             }
+
+                                            echo '</li>';
                                         }
                                     } else {
-                                        showAlert('error', 'Leider konnten wir in dieser Kategorie keine Daten für dich finden.');
+                                        echo '<li>';
+                                            showAlert('error', 'Leider konnten wir in dieser Kategorie keine Daten für dich finden.');
+                                        echo '</li>';
                                     }
                                 ?>
                             </ul>

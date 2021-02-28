@@ -3,16 +3,21 @@
   display: none;
 
   @media #{$mq-medium} {
+    background-color: $color-white;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: .75rem;
+    border-radius: .25rem;
+    border: 1px solid $color-grey-dark;
     content: '';
     display: inline-block;
-    height: 1rem;
-    margin-left: 1rem;
+    float: left;
+    font-size: .75rem;
+    height: 1.75rem;
+    margin-right: 1rem;
     position: relative;
-    top: .2rem;
-    width: 1rem;
+    top: -.2rem;
+    width: 1.75rem;
   }
 }
 
@@ -24,4 +29,9 @@
   &-download::before {
     background-image: url('../Images/icon-download.svg');
   }
+}
+
+label + [class^="icon-"]::before,
+label + [class*=" icon-"]::before {
+  margin-left: -.75rem;
 }

@@ -18,6 +18,6 @@ main {
 }
 
 .sidebar.active + main iframe {
-  margin-left: 450px;
-  width: calc(100% - 450px);
+  margin-left: 500px;
+  width: calc(100% - 500px);
 }
