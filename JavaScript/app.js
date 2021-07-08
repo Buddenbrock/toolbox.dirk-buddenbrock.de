@@ -40,8 +40,7 @@ class App {
 
         for (i = 0; i < link.length; i++) {
             link[i].addEventListener("click", function() {
-                const url = this.getAttribute("data-link");
-                frame.src = url;
+                frame.src = this.getAttribute("data-link");
             });
         }
     }
