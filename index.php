@@ -46,114 +46,114 @@
     <link rel="stylesheet" href="Css/main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar active">
-            <button class="sidebar__button" title="Sidebar schließen"></button>
-            <header>
-                <img src="Images/logo.svg" alt="Toolbox" class="logo" />
-            </header>
-            <nav>
+<div class="wrapper">
+    <div class="sidebar active">
+        <button class="sidebar__button" title="Sidebar schließen"></button>
+        <header>
+            <img src="Images/logo.svg" alt="Toolbox" class="logo" />
+        </header>
+        <nav>
 
-                <?php
-                    if($sites) {
-                        foreach ($sites['sections'] as $section) {
-                ?>
-                    <div class="accordion">
-                        <button class="button">
-                            <h2>
-                                <?php
-                                    if($section[category]) {
-                                        echo '<label>' . $section[category] . '</label>';
-                                    }
-                                    echo $section[title];
-                                ?>
-                            </h2>
-                        </button>
-                        <div class="panel">
-                            <ul>
-                                <?php
-                                    if($section[links]) {
-                                        foreach ($section[links] as $item) {
-                                            echo '<li>';
+            <?php
+            if($sites) {
+                foreach ($sites['sections'] as $section) {
+            ?>
+            <div class="accordion">
+                <button class="button">
+                    <h2>
+                    <?php
+                        if($section[category]) {
+                            echo '<label>' . $section[category] . '</label>';
+                        }
+                        echo $section[title];
+                    ?>
+                    </h2>
+                </button>
+                    <div class="panel">
+                        <ul>
+                            <?php
+                                if($section[links]) {
+                                    foreach ($section[links] as $item) {
+                                        echo '<li>';
 
-                                            if ($section[completeExternal] === true) {
+                                        if ($section[completeExternal] === true) {
 
-                                                if($item[label]) {
-                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
-                                                            . '<label>' . $item[label] . '</label>'
-                                                            . '<i class="icon icon-external"></i>'
-                                                            . $item[title]
-                                                        . '</a>';
-                                                } else {
-                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                            if($item[label]) {
+                                                echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                        . '<label>' . $item[label] . '</label>'
                                                         . '<i class="icon icon-external"></i>'
                                                         . $item[title]
-                                                        . '</a>';
-                                                }
-
-                                            } else if($item[additionalClass]) {
-                                                
-                                                if($item[label]) {
-                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
-                                                        . '<label>' . $item[label] . '</label>'
-                                                        . '<i class="icon icon-' . $item[additionalClass] . '"></i>'
-                                                        . $item[title]
-                                                        . '</a>';
-                                                } else {
-                                                    echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
-                                                        . '<i class="icon icon-' . $item[additionalClass] . '"></i>'
-                                                        . $item[title]
-                                                        . '</a>';
-                                                }
-
+                                                    . '</a>';
                                             } else {
-
-                                                if($item[label]) {
-                                                    echo '<button class="iframe-link" data-link="' . $item[link] . '">'
-                                                        . '<label>' . $item[label] . '</label>'
-                                                        . $item[title]
-                                                        . '</button>';
-                                                    echo '<a class="show-mobile" href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
-                                                        . '<label>' . $item[label] . '</label>'
-                                                        . $item[title]
-                                                        . '</a>';
-                                                } else {
-                                                    echo '<button class="iframe-link" data-link="' . $item[link] . '">'
-                                                        . $item[title]
-                                                        . '</button>';
-                                                    echo '<a class="show-mobile" href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
-                                                        . $item[title]
-                                                        . '</a>';
-                                                }
-
-
+                                                echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                    . '<i class="icon icon-external"></i>'
+                                                    . $item[title]
+                                                    . '</a>';
                                             }
 
-                                            echo '</li>';
+                                        } else if($item[additionalClass]) {
+
+                                            if($item[label]) {
+                                                echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                    . '<label>' . $item[label] . '</label>'
+                                                    . '<i class="icon icon-' . $item[additionalClass] . '"></i>'
+                                                    . $item[title]
+                                                    . '</a>';
+                                            } else {
+                                                echo '<a href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                    . '<i class="icon icon-' . $item[additionalClass] . '"></i>'
+                                                    . $item[title]
+                                                    . '</a>';
+                                            }
+
+                                        } else {
+
+                                            if($item[label]) {
+                                                echo '<button class="iframe-link" data-link="' . $item[link] . '">'
+                                                    . '<label>' . $item[label] . '</label>'
+                                                    . $item[title]
+                                                    . '</button>';
+                                                echo '<a class="show-mobile" href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                    . '<label>' . $item[label] . '</label>'
+                                                    . $item[title]
+                                                    . '</a>';
+                                            } else {
+                                                echo '<button class="iframe-link" data-link="' . $item[link] . '">'
+                                                    . $item[title]
+                                                    . '</button>';
+                                                echo '<a class="show-mobile" href="' . $item[link] . '" title="' . $item[title] . '" target="_blank" rel="noopener" rel="noreferrer">'
+                                                    . $item[title]
+                                                    . '</a>';
+                                            }
+
+
                                         }
-                                    } else {
-                                        echo '<li>';
-                                            showAlert('error', 'Leider konnten wir in dieser Kategorie keine Daten für dich finden.');
+
                                         echo '</li>';
                                     }
-                                ?>
-                            </ul>
-                        </div>
+                                } else {
+                                    echo '<li>';
+                                        showAlert('error', 'Leider konnten wir in dieser Kategorie keine Daten für dich finden.');
+                                    echo '</li>';
+                                }
+                            ?>
+                        </ul>
                     </div>
-                <?php
-                        }
-                    } else {
-                        showAlert('error', 'Leider konnten wir keinen Tools für dich finden.');
+                </div>
+            <?php
                     }
-                ?>
+                } else {
+                    showAlert('error', 'Leider konnten wir keinen Tools für dich finden.');
+                }
+            ?>
 
-                <a class="alert footer" href="https://www.dirk-buddenbrock.de" target="_blank" rel="noopener" rel="noreferrer">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
-            </nav>
-        </div>
-        <main>
-            <iframe id="iframe" src="default.html" frameborder="0"></iframe>
-        </main>
+            <a class="alert footer" href="https://www.dirk-buddenbrock.de" target="_blank" rel="noopener" rel="noreferrer">&copy; <?=(date('Y'))?> dirk-buddenbrock.de</a>
+        </nav>
     </div>
-    <script src="JavaScript/app.js"></script>
+    <main>
+        <iframe id="iframe" src="default.html" frameborder="0"></iframe>
+    </main>
+</div>
+<script src="JavaScript/app.js"></script>
 </body>
 </html>

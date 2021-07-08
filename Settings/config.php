@@ -11,4 +11,3 @@ $imageHeight = '1080';
 $imageWidth = '1920';
 
 $version = '2.0.4';
-?>
