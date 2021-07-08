@@ -1395,5 +1395,138 @@ $sites = [
                 ],
             ]
         ],
+        [
+            'title' => 'Templates als Distributione',
+            'category' => 'TYPO3',
+            'completeExternal' => true,
+            'completeVideo' => true,
+            'links' => [
+                [
+                    'link' => 'https://vimeo.com/349633596',
+                    'title' => 'Wichtige Grundbegriffe aus der TYPO3 Welt',
+                    'label' => '01'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135245198',
+                    'title' => 'Einleitung',
+                    'label' => '01'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135247147',
+                    'title' => 'TYPO3 7 installieren',
+                    'label' => '02'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135247892',
+                    'title' => 'Extension Builder installieren',
+                    'label' => '03'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135248477',
+                    'title' => 'Distribution erzeugen',
+                    'label' => '04'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135249439',
+                    'title' => 'Distribution vorbereiten und aktivieren',
+                    'label' => '05'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135329941',
+                    'title' => 'Ordnerstruktur der Distribution anpassen',
+                    'label' => '06'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135330280',
+                    'title' => 'HTML-Vorlage vorbereiten',
+                    'label' => '07'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135330984',
+                    'title' => 'HTML-Vorlage für Fluidtemplate aufbereiten',
+                    'label' => '08'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135351719',
+                    'title' => 'Layouts, Templates und Partials in TYPO3 ansprechen',
+                    'label' => '09'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135352294',
+                    'title' => 'CSS und JavaScript einbinden',
+                    'label' => '10'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135353133',
+                    'title' => 'Meta-Tags einbinden',
+                    'label' => '11'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135453738',
+                    'title' => 'Conditional Comments für ältere Internet Explorer',
+                    'label' => '12'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135454856',
+                    'title' => 'Inhaltselemente im Frontend ausgeben',
+                    'label' => '13'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135455269',
+                    'title' => 'Backend-Layout erzeugen und auswerten',
+                    'label' => '14'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135455870',
+                    'title' => 'TypoScript für die Hauptnavigation',
+                    'label' => '15'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135456558',
+                    'title' => 'Link zur Homepage',
+                    'label' => '16'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135457047',
+                    'title' => 'Ausgabe im Footer',
+                    'label' => '17'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135547459',
+                    'title' => 'aside-Element nur bei vorhandenen Inhalten',
+                    'label' => '18'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135547988',
+                    'title' => 'config-TypoScript verbessern',
+                    'label' => '19'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135548325',
+                    'title' => 'Page und UserTSconfig einbinden',
+                    'label' => '20'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135548508',
+                    'title' => 'Backend-Layouts per Page TSconfig definieren',
+                    'label' => '21'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135645158',
+                    'title' => 'Beispiele für Fluid-Viewhelper',
+                    'label' => '22'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135645555',
+                    'title' => 'Distribution fertigstellen',
+                    'label' => '23'
+                ],
+                [
+                    'link' => 'https://vimeo.com/135646080',
+                    'title' => 'Die Distribution testen',
+                    'label' => '24'
+                ]
+            ]
+        ]
     ]
 ];
